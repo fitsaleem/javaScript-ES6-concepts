@@ -14,6 +14,9 @@
 
 **5: Destructuring:**
 
+**6: Higher order function:**
+
+
 
 
 
