@@ -120,39 +120,57 @@ console.log(model4);
 
 // 5: Higher order functions:
 
-//1: map();
+//a: map();
+// map() function will return new array while foreach() will not return new array
+// map method will use when you want to iterat the array
 
+let citeis = ["karachi", "lahore", "multan ", "peshawar"];
 
-let citeis=["karachi","lahore","multan ","peshawar"];
-
-let upparCase=citeis.map((value)=> value.toUpperCase())
+let upparCase = citeis.map((value) => value.toUpperCase());
 console.log(upparCase);
-console.log(citeis)
+console.log(citeis);
 
-//2: 
+//b: filter();
+// filter() function aslo work same as map() function just it will retun only true values in new array
+
+let age = [77, 88, 55, 9, 99, 55];
+let newAge = age.filter((age) => {
+  return age > 55;
+});
+console.log(age);
+console.log("new filter age is: " + newAge);
+
+//c: .reduce();
+// reduce() is also a higher order function it will not return any new arry its just return the reduce value.
+// it will use when you do some calculations
+// it get two arguments
+
+let workers = [ 55,88,99,99,93];
+
+let sum= workers.reduce((a, b)=>{
+  return a+b
+})
+
+console.log(workers)
+console.log(sum)
 
 //6: sorting:
 
-let number=[78,8,99,77,99]
-number.sort((a,b)=>{
-  return a-b;
+let number = [78, 8, 99, 77, 99];
+number.sort((a, b) => {
+  return a - b;
 });
-console.log(number)
+console.log(number);
 
 // it check the return value (negative ,positive or zero)
 // then check the valuse are smaller,bigger or equal
 
 // for string array
 
-let string=["abac","b","a","ab","az"]
-string.sort((a,b)=>{
-  return (
-    (a>b)-(a<b)
-  )
-})
+let string = ["abac", "b", "a", "ab", "az"];
+string.sort((a, b) => {
+  return (a > b) - (a < b);
+});
 
 console.log(string);
 // true will return 1 and false will return zero .so on the basis of true and false it will sort the array
-
-
-

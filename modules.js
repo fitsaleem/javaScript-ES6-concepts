@@ -6,7 +6,7 @@
         id: 33,
         address: "karachi"
     }
-    console.log("name: "+user.name + "\n"+ "user Id: "+user.id+"\n"+"user address: " + user.address)
+    console.log("name: "+user.name + "\n"+ "user Id: "+user.id+"\n"+"user address: " + user.address) 
 }
 
 
@@ -20,5 +20,6 @@ export const contact1=()=>{
         id: 88,
         address: "lahore"
     }
-    console.log("name: "+user.name + "\n"+ "user Id: "+user.id+"\n"+"user address: " + user.address)
+    console.log("name: "+user.name + "\n"+ "user Id: "+user.id+"\n"+"user address: " + user.address) 
+
 }
